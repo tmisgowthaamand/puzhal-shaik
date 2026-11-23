@@ -109,6 +109,14 @@ button {
   letter-spacing: 0.04em;
 }
 
+.brand-logo-img {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .brand-text {
   display: flex;
   flex-direction: column;

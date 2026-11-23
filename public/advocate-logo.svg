@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Advocate Shaik Mohamed Ali Logo">
+  <circle cx="64" cy="64" r="62" fill="#14532d" />
+  <circle cx="64" cy="64" r="55" fill="none" stroke="#c8a454" stroke-width="2.5" />
+  <g fill="none" stroke="#faf9f6" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="64" y1="28" x2="64" y2="92" />
+    <circle cx="64" cy="25" r="3.5" fill="#c8a454" stroke="none" />
+    <line x1="34" y1="40" x2="94" y2="40" stroke="#c8a454" stroke-width="3.8" />
+    <path d="M36 40 L26 66 L46 66 Z" stroke-width="2.6" />
+    <path d="M24 66 Q36 78 48 66" fill="#faf9f6" fill-opacity="0.18" stroke-width="3" />
+    <path d="M92 40 L82 66 L102 66 Z" stroke-width="2.6" />
+    <path d="M80 66 Q92 78 104 66" fill="#faf9f6" fill-opacity="0.18" stroke-width="3" />
+    <line x1="46" y1="92" x2="82" y2="92" stroke="#c8a454" stroke-width="4" />
+    <line x1="38" y1="99" x2="90" y2="99" stroke="#faf9f6" stroke-width="3.5" />
+  </g>
+</svg>

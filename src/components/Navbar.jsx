@@ -29,9 +29,13 @@ export default function Navbar({ onNavigateSection }) {
               handleSectionClick('top');
             }}
           >
-            <span className="brand-monogram" aria-hidden="true">
-              SM
-            </span>
+            <img
+              src="/advocate-logo.svg"
+              alt="Advocate Logo"
+              className="brand-logo-img"
+              width={36}
+              height={36}
+            />
             <span className="brand-text">
               <span className="brand-name">Adv. Shaik Mohamed Ali</span>
               <span className="brand-sub">MBA, LL.B. · Chennai</span>

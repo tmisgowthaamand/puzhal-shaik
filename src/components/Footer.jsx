@@ -10,8 +10,19 @@ export default function Footer({ onOpenPolicy, onNavigateSection }) {
         <div className="footer-grid">
           {/* Column 1: Identity */}
           <div className="footer-col">
-            <strong className="footer-brand">{PROFILE_DATA.name}</strong>
-            <p className="footer-role">{PROFILE_DATA.roleTitle}</p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <img
+                src="/advocate-logo.svg"
+                alt="Advocate Logo"
+                className="brand-logo-img"
+                width={38}
+                height={38}
+              />
+              <div>
+                <strong className="footer-brand">{PROFILE_DATA.name}</strong>
+                <p className="footer-role">{PROFILE_DATA.roleTitle}</p>
+              </div>
+            </div>
             <p className="footer-creds">{PROFILE_DATA.credentials}</p>
             <p className="footer-note">
               Working for constitutional rights, education, social justice, and inclusive public welfare.
