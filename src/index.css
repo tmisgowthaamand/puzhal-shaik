@@ -386,6 +386,11 @@ button {
 }
 
 /* Sections */
+section[id],
+#top {
+  scroll-margin-top: 76px;
+}
+
 .section {
   padding-block: clamp(40px, 6vw, 72px);
   border-bottom: 1px solid var(--border-hairline);
@@ -963,6 +968,30 @@ button {
   border-top: 1px solid var(--border-hairline);
   padding-top: 18px;
   margin: 0;
+}
+
+/* Floating Scroll-to-Top Button */
+.scroll-top-btn {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(20px, env(safe-area-inset-bottom));
+  z-index: 50;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--accent-primary);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px -6px rgba(24, 24, 27, 0.35);
+  transition: transform 0.18s ease, background-color 0.18s ease, opacity 0.18s ease;
+}
+
+.scroll-top-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
 }
 
 /* Responsive Breakpoints across all target devices:

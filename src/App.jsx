@@ -9,6 +9,7 @@ import {
   Clock,
   CheckCircle2,
   ArrowRight,
+  ArrowUp,
 } from 'lucide-react';
 import Navbar from './components/Navbar';
 import PolicyView from './components/PolicyView';
@@ -29,6 +30,7 @@ function getViewFromLocation() {
 
 export default function App() {
   const [activeView, setActiveView] = useState(getViewFromLocation);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   const [formState, setFormState] = useState({
     name: '',
     email: '',
@@ -36,6 +38,14 @@ export default function App() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setShowScrollTop(window.scrollY > 320);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   useEffect(() => {
     const syncView = () => {
@@ -494,6 +504,18 @@ export default function App() {
       )}
 
       <Footer onOpenPolicy={openPolicy} onNavigateSection={navigateToSection} />
+
+      {showScrollTop && (
+        <button
+          type="button"
+          className="scroll-top-btn"
+          aria-label="Scroll to top"
+          title="Back to top"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
+          <ArrowUp size={20} />
+        </button>
+      )}
     </>
   );
 }
