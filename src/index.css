@@ -267,11 +267,11 @@ button {
 .hero-title {
   font-family: var(--font-serif);
   font-size: clamp(2rem, 5.5vw, 3.4rem);
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.12;
   letter-spacing: -0.015em;
   margin: 0 0 14px;
-  color: var(--ink-primary);
+  color: var(--accent-primary);
 }
 
 .hero-role {
