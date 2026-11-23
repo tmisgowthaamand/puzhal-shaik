@@ -12,7 +12,7 @@ export default function Footer({ onOpenPolicy, onNavigateSection }) {
           <div className="footer-col">
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <img
-                src="/advocate-logo.svg"
+                src="/advocate-logo.png"
                 alt="Advocate Logo"
                 className="brand-logo-img"
                 width={38}

@@ -30,7 +30,7 @@ export default function Navbar({ onNavigateSection }) {
             }}
           >
             <img
-              src="/advocate-logo.svg"
+              src="/advocate-logo.png"
               alt="Advocate Logo"
               className="brand-logo-img"
               width={36}
