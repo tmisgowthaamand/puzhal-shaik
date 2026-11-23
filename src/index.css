@@ -1,16 +1,16 @@
 :root {
-  --bg-paper: #faf9f6;
+  --bg-paper: #ffffff;
   --bg-surface: #ffffff;
-  --bg-subtle: #f2efe9;
-  --ink-primary: #18181b;
-  --ink-secondary: #4a4a52;
-  --ink-muted: #6e6e77;
-  --accent-primary: #14532d;
-  --accent-hover: #166534;
-  --accent-soft: #eef5f0;
-  --gold-rule: #9a7b2c;
-  --border-hairline: #e4e0d8;
-  --border-strong: #d0cabf;
+  --bg-subtle: #f2faf5;
+  --ink-primary: #0f1f17;
+  --ink-secondary: #3b4f44;
+  --ink-muted: #5c7366;
+  --accent-primary: #0f5132;
+  --accent-hover: #0b3d26;
+  --accent-soft: #e6f4ec;
+  --gold-rule: #198754;
+  --border-hairline: #dcebe2;
+  --border-strong: #b7d6c4;
 
   --font-serif: 'Newsreader', 'Noto Sans Tamil', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', 'Noto Sans Tamil', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -74,7 +74,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 40;
-  background-color: rgba(250, 249, 246, 0.92);
+  background-color: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-hairline);
 }
@@ -241,6 +241,7 @@ button {
 /* Hero */
 .hero-section {
   padding-block: clamp(32px, 6vw, 72px) clamp(40px, 6vw, 72px);
+  background: linear-gradient(180deg, #f2faf5 0%, #ffffff 100%);
   border-bottom: 1px solid var(--border-hairline);
 }
 
@@ -365,9 +366,9 @@ button {
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  background: #dcdcdc;
-  border: 1px solid var(--border-hairline);
-  box-shadow: 0 18px 40px -24px rgba(24, 24, 27, 0.28);
+  background: #ffffff;
+  border: 2px solid var(--border-hairline);
+  box-shadow: 0 20px 44px -22px rgba(15, 81, 50, 0.25);
   aspect-ratio: 1 / 1;
 }
 
@@ -544,10 +545,11 @@ section[id],
 
 /* Vision & Mission Banner */
 .mission-box {
-  background: var(--accent-primary);
+  background: linear-gradient(135deg, #0f5132 0%, #157347 100%);
   color: #ffffff;
   border-radius: var(--radius-lg);
   padding: clamp(24px, 5vw, 48px);
+  box-shadow: 0 20px 44px -24px rgba(15, 81, 50, 0.35);
 }
 
 .mission-box .section-eyebrow {
